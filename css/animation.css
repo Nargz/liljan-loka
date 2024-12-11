@@ -1,0 +1,49 @@
+@keyframes toLeft {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .toLeft {
+    animation: 1.5s toLeft;
+  }
+  
+  
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #zoom {
+    animation: 1.5s zoom;
+  }
+  
+  @keyframes jiggy {
+    
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(-5%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .jiggy {
+    animation: .5s jiggy infinite;
+    animation-timing-function: linear;
+    
+  }
+  

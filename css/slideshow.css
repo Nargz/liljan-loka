@@ -1,0 +1,89 @@
+
+.slideshow {
+    padding-top: 2rem;
+    margin-bottom: 10rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    float: left;
+    height: 100%;
+    width: 16.66666%;
+    height: 700px;
+
+}
+
+
+.slide img {
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: 600%;
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 25s ease infinite;
+}
+
+
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+    /* Calculate the margin-left for 
+    each of the slides */
+
+
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: -100%;
+    }
+
+    40% {
+        margin-left: -200%;
+    }
+
+    60% {
+        margin-left: -300%;
+    }
+
+    80% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: -500%;
+    }
+    
+    
+    
+}
+
+
+@media screen and (max-width:60rem){
+    .slide {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:30rem){
+    .slide {
+        height: 500px;
+    }
+}

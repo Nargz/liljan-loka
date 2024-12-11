@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/chatbox.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/iconslogo.css">
+</head>
+
+<body>
+  <section class="menuBg">
+    <a href="index.html">
+      <img class='logo' src="images/liljan.png" alt="">
+    </a>
+
+    <nav class="noflow">
+      <input type="checkbox" id="inputMenu">
+      <label for="inputMenu" class="labelMenu"> &#9776; </label>
+      <div class="topmenu">
+        <a href="askrift.html" class="small">Blómaáskrift</a>
+        <a href="plantaaskrift.html" class="small">Plöntuáskrift</a>
+        <input type="checkbox" id="navdrop">
+        <label for="navdrop" class="navdrop">Áskrift</label>
+        <div class="navdropmenu"><a href="askrift.html">Blómaáskrift</a><a href="plantaaskrift.html">Plöntuáskrift</a>
+        </div>
+        <a href="pottaplontur.html">Pottaplöntur</a>
+        <a href="blom.html">Blóm</a>
+        <a href="#login">Mínar Síður</a>
+      </div>
+    </nav>
+  </section>
+  <section class="col-2">
+    <article>
+      <div class="slideshow">
+        <div class="slide-wrapper">
+          <div class="slide">
+            <img src="images/fl1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/fl2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/fl3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/fl4.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/fl5.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/fl1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div>
+      <div class="yip">
+        Blóm í áskrift
+      </div>
+
+      <div class="pening">
+        6.900kr
+      </div>
+
+      <div class="texti">
+        Við bjóðum upp á þjónustu þar sem þú getur fengið veglega blómvendi, stóra sem og smáa, að dyrum þínum. Það eina
+        sem þú þarft að gera er að panta á vefsíðunni og velja hversu oft í mánuði þú vilt blóm.
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <form action="takk.html" method="get"><!--method á að vera POST -->
+    <fieldset>
+      <legend>Panta</legend>
+      <section>
+        <p>
+          <label>Fullt nafn</label><br>
+          <input type="text" name="first_name">
+        </p>
+
+      </section>
+
+      <section class="col-2">
+        <p>
+          <label>Netfang</label><br>
+          <input type="email" name="email" required>
+        </p>
+        <p>
+          <label>Kortaaupplýsingar </label> <br>
+          <input type="tel" name="phone" required placeholder="xxxx xxxx xxxx xxxx" maxlength="19">
+        </p>
+      </section>
+      <section class="col-2">
+        <p>
+          <label>Tíðni</label> <br>
+          <select name="Country">
+            <option>2 Vikur</option>
+            <option>4 Vikur</option>
+            <option>6 Vikur</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Stærð</label> <br>
+          <select name="Country">
+            <option>Lítill</option>
+            <option>Stór</option>
+            <option>Risastór</option>
+          </select>
+        </p>
+      </section>
+      <p>
+        <label>Aðrar upplýsingar</label><br>
+        <textarea rows="5"></textarea>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" value="terms">
+          Ég hef lesið og samþykki <a>skilmála</a>
+        </label>
+      </p>
+      <p>
+        <button>Sign up</button>
+        <!--button type="reset">Reset form</button-->
+        <button disabled="disabled">Disabled</button>
+      </p>
+    </fieldset>
+  </form>
+  <div id="login" class="overlay">
+    <div class="popup">
+      <h2>Velkomin/n</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <form action="takk.html" method="get">
+          <fieldset>
+            <legend>Innskráning</legend>
+            <p>Notendanafn: <input type="text" name="user" required placeholder="User"></p>
+            <p>Lykilorð: <input type="password" name="psw" required placeholder="Password"></p>
+            <p><input type="submit" value="Innskráning"></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
