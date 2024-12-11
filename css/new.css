@@ -21,17 +21,17 @@
 	/* Dark theme */
 	--nc-d-tx-1: #ffffff;
 	--nc-d-tx-2: #eeeeee;
-	--nc-d-bg-1: #000000;
+	--nc-d-bg-1: #899a7e;
 	--nc-d-bg-2: #111111;
 	--nc-d-bg-3: #4e4e4e;
-	--menu-d-bg: #0d6d6e;	
+	--menu-d-bg: #004305;	
 	--nc-d-lk-1: #25f0f3;
 	--nc-d-lk-v: #e0e0e0;
-	--nc-d-lk-2: #ff4f69;
-	--nc-d-lk-tx: #0c0b0b;
-	--nc-d-ac-1: #05b8bc;
+	--nc-d-lk-2: #004305;
+	--nc-d-lk-tx: #284125;
+	--nc-d-ac-1: #ffffff;
 	--nc-d-ac-tx: #FFFFFF;
-	--val-d-bg: #ad8d11;
+	--val-d-bg: #004305;
 	--table-d-bg: rgba(0,0,0, .5);
 }
 
